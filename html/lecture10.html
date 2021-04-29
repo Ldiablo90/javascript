@@ -1,0 +1,50 @@
+<!-- 10-1 code
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+    <script>
+        var uls = document.getElementsByTagName('ul')[0];
+        var lis = uls.getElementsByTagName('li');
+        for(var i=0; lis.length; i++){
+            lis[i].style.color='red';
+        }
+    </script>
+</body>
+</html>
+
+-->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>HTML</li>
+        <li class="active">CSS</li>
+        <li id="active">JavaScript</li>
+    </ul>
+    <script>
+        var liIds = document.getElementsByClassName('active');
+        for(var i=0;liIds.length;i++){
+            liIds[i].style.color='blue'
+        }
+    </script>
+</body>
+</html>
