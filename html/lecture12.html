@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div style="float: left;;">
+        <div style="width: 50%;">
+            <ul>
+                <li>HTML</li>
+                <li id="active">javascript</li>
+                <li class="active">java</li>
+            </ul>
+        </div>
+        <div style="width: 50%;">
+            <textarea name="area"></textarea>
+            <input type="text" id='redcheng' value="$('.active').css('color','blue');">
+            <input type="button" value="change" onclick="$('.active').css('color','blue')">
+        </div>
+    </div>
+
+
+    
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        function func_id(){
+            var txt = document.getElementById('active');
+            txt.style.color='red';
+        }
+        
+    </script>
+</body>
+
+</html>

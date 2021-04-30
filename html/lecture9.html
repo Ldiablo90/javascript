@@ -1,0 +1,89 @@
+<!-- 9-1 code
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <style>li {padding: 10px; list-style: none;}</style>
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>
+            첫번째
+            <input type="button" onclick="open1()" value="window.open('demo2.html');"/>
+        </li>
+        <li>
+            두번째
+            <input type="button" onclick="open2()" value="window.open('demo2.html','_self');"/>
+        </li>
+        <li>
+            세번째
+            <input type="button" onclick="open3()" value="window.open('demo2.html','_blank');"/>
+        </li>
+        <li>
+            네번째
+            <input type="button" onclick="open4()" value="window.open('demo2.html','ot');"/>
+        </li>
+        <li>
+            다섯번째
+            <input type="button" onclick="open5()" value="window.open('demo2.html','_blank','width=200, height=200, resizable=no');"/>
+        </li>
+    </ul>
+    <script>
+        function open1(){
+            window.open('demo2.html');
+        }
+        function open2(){
+            window.open('demo2.html','_self');
+        }
+        function open3(){
+            window.open('demo2.html','_blank');
+        }
+        function open4(){
+            window.open('demo2.html','ot');
+        }
+        function open5(){
+            window.open('demo2.html','_blank',
+            'width=200, height=200, resizable=no');
+        }
+    </script>
+</body>
+</html>
+ -->
+ <!--
+<!DOCTYPE html>
+ <html lang="ko">
+ <head>
+     <meta charset="UTF-8">
+     <title>Document</title>
+ </head>
+ <body>
+     <input type="button" value="open" onclick="winopen()"/>
+     <input type="text" onkeypress="winmessage(this.value)"/>
+     <input type="button" value="close" onclick="winclose()"/>
+     <script>
+         function winopen(){
+            win = window.open('demo2.html', 'ot', 'width=300px, height=500px');
+         }
+         function winmessage(){
+            win.document.getElementById('message').innerText=msg;
+         }
+         function winclose(){
+             win.close();
+         }
+     </script>
+ </body>
+ </html>
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <title>Document</title>
+ </head>
+ <body>
+     <script>
+         window.open('demo2.html');
+     </script>
+ </body>
+ </html>
