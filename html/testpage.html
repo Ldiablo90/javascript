@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="outlin_div">
+        <div class="inlin_div one">
+            <a href="./testpage.html">
+                <img src="../img/blank_logo.png">
+            </a>
+        </div>
+        <div class="inlin_div two">
+            <a>home</a>
+            <a>shoecave</a>
+            <a>premium</a>
+        </div>
+        <div class="inlin_div three">
+
+        </div>
+      </div>
+      <style>
+          .outlin_div{
+              background-color: gray;
+              width: 100vw; height: 50px;
+              display: flex;
+              align-items: center;
+          }
+          .inlin_div{ 
+              width: 100; height: auto;
+              float: left;
+           }
+          .inlin_div.one{ 
+              background-color: green;
+              text-align: center;
+            }
+          .inlin_div.one > a {  } 
+          .inlin_div.one > a > img{ 
+            max-width: 100%;
+            min-width: 30px;
+            display: block; 
+            margin: 0 auto;
+            }
+          .inlin_div.two{ 
+              background-color: yellow; 
+              display: flex;
+              
+              text-align: center;
+              }
+          .inlin_div.two > a {
+              float: left;
+
+              } 
+
+          .inlin_div.three{ background-color: red; }
+      </style>
+</body>
+</html>
